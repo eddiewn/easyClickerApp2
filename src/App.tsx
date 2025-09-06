@@ -7,7 +7,7 @@ const [clickNumber, setClickNumber] = useState<number>(() => {
 	const stored = (localStorage.getItem("clickNumber"))
 	return stored ? JSON.parse(stored) as number : 0;
 });
-	//huehue
+	//huehue ok guys its done now
 
 	useEffect(() => {
 		localStorage.setItem("clickNumber", JSON.stringify(clickNumber));
